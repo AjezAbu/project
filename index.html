@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Report</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="logo">
+      <img src="logo.png" class="center">
+    </div>
+  </nav>
+  
+  <div class="background">
+    
+   
+    <div class="menu">
+      <!-- <div class="chart1" id="curve_chart" style="width: 100px; height: 100px; padding-left: 110px;"></div> -->
+      <ol>
+        <br> <br>
+        <div class="padding">
+          <li><a href="#"><i class="bi bi-house-heart"></i></a></li>
+        </div>
+        <div class="padding">
+          <li><a href="#"><i class="bi bi-bar-chart-line"></i></a></li>
+        </div>
+        <div class="padding">
+          <li><a href="#"><i class="bi bi-credit-card"></i></a></li>
+        </div>
+        <div class="padding">
+          <li><a href="#"><i class="bi bi-card-checklist"></i></a></li>
+        </div>
+        <div class="padding">
+          <li><a href="#"><i class="bi bi-clock"></i></a></li>
+        </div>
+        <div class="padding">
+          <li><a href="#"><i class="bi bi-arrow-down-up"></i></a></li>
+        </div>
+        <div class="padding">
+          <li><a href="#"><i class="bi bi-chat-right-text"></i></a></li>
+        </div>
+    
+      </ol>
+    
+    </div>
+    
+  </div>
+
+</body>
+
+</html>
